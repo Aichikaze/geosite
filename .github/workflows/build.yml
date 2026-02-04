@@ -42,7 +42,7 @@ jobs:
       - name: Get and add domain lists
         run: |          
           curl -sSL $RUSSIA_INSIDE > ./russia-inside.txt
-          cp {russia-inside}.txt ./community/data/
+          cp russia-inside.txt ./community/data/
           for f in ./community/data/*.txt; do mv "$f" "${f//.txt/}"; done
 
       - name: Build ad block
