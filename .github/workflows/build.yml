@@ -18,7 +18,7 @@ jobs:
           echo "RELEASE_NAME=Released on $(date +%Y%m%d%H%M)" >> $GITHUB_ENV
           echo "TAG_NAME=$(date +%Y%m%d%H%M)" >> $GITHUB_ENV
           echo "RUSSIA_INSIDE=https://raw.githubusercontent.com/itdoginfo/allow-domains/main/Russia/inside-raw.lst" >> $GITHUB_ENV
-          echo "HAGEZI_DNS_ADBLOCK=https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/multi.txt" >> $GITHUB_ENV
+          echo "HAGEZI_DNS_ADBLOCK=https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/light.txt" >> $GITHUB_ENV
         shell: bash
 
       - name: Checkout Loyalsoldier/domain-list-custom
